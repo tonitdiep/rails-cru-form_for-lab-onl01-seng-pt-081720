@@ -9,6 +9,13 @@ RSpec.describe "Artists", type: :request do
     end
   end
 
+  describe "GET /show" do
+    it "returns http success" do
+      get "/artist/show"
+      expect(response).to have_http_status(:success)
+    end
+  end
+
   describe "GET /new" do
     it "returns http success" do
       get "/artist/new"
@@ -16,9 +23,9 @@ RSpec.describe "Artists", type: :request do
     end
   end
 
-  describe "GET /show" do
+  describe "GET /create" do
     it "returns http success" do
-      get "/artist/show"
+      get "/artist/create"
       expect(response).to have_http_status(:success)
     end
   end

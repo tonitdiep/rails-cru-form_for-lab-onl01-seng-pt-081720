@@ -2,10 +2,13 @@ class GenreController < ApplicationController
   def index
   end
 
+  def show
+  end
+
   def new
   end
 
-  def show
+  def create
   end
 
   def edit

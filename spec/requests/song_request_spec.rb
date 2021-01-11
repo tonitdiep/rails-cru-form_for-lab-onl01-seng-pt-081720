@@ -9,6 +9,13 @@ RSpec.describe "Songs", type: :request do
     end
   end
 
+  describe "GET /show" do
+    it "returns http success" do
+      get "/song/show"
+      expect(response).to have_http_status(:success)
+    end
+  end
+
   describe "GET /new" do
     it "returns http success" do
       get "/song/new"
@@ -16,9 +23,9 @@ RSpec.describe "Songs", type: :request do
     end
   end
 
-  describe "GET /show" do
+  describe "GET /create" do
     it "returns http success" do
-      get "/song/show"
+      get "/song/create"
       expect(response).to have_http_status(:success)
     end
   end

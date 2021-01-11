@@ -9,6 +9,13 @@ RSpec.describe "Genres", type: :request do
     end
   end
 
+  describe "GET /show" do
+    it "returns http success" do
+      get "/genre/show"
+      expect(response).to have_http_status(:success)
+    end
+  end
+
   describe "GET /new" do
     it "returns http success" do
       get "/genre/new"
@@ -16,9 +23,9 @@ RSpec.describe "Genres", type: :request do
     end
   end
 
-  describe "GET /show" do
+  describe "GET /create" do
     it "returns http success" do
-      get "/genre/show"
+      get "/genre/create"
       expect(response).to have_http_status(:success)
     end
   end
