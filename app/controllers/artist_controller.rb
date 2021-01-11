@@ -11,11 +11,11 @@ class ArtistController < ApplicationController
     @artist = Artist.new
   end
 
-
-
   def edit
+
   end
 
   def update
   end
+  
 end
