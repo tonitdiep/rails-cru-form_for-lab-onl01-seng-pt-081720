@@ -23,7 +23,7 @@ class ArtistController < ApplicationController
 
   def update
   end
-
+private
   def artist_params
     params.require(:artist).permit(:name, :bio)
   end
